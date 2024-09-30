@@ -8,102 +8,149 @@ export const sectionHeading = {
 
 export const timelineData: TimelineEntry[] = [
   {
-    title: "cs-flashcards",
+    title: "GitHub Repository Rating App for iOS and Android",
     projectUrls: {
       repo: {
-        owner: "yoyocharlie",
-        name: "cs-flashcards-open",
+        owner: "kpcullen",
+        name: "rate-repository-app",
         showStarCount: false,
       },
     },
-    imageUrl: "/images/cs-flashcards.png",
-    description: `A fullstack flashcards web app that I maintain as a valuable learning resource for both myself and the developer community. By open-sourcing this project, I aim to share knowledge and provide a practical tool for others to learn and grow in their development journey.`,
+    imageUrl: "/images/rate-repo-app.png",
+    description: `The frontend logic and UI for searching and rating GitHub repositories.`,
     tech: [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "shadcn/ui",
-      "tRPC",
-      "Prisma",
-      "Docker",
-      "Vercel Postgres",
+      "React Native",
+      "React Native Paper",
+      "GraphQL",
+      "Apollo Client",
+      "Expo Go",
     ],
     cards: {
       a: {
-        title: "Comprehensive Learning Tool",
-        text: `Built with TypeScript and Next.js, this app offers a robust
-              platform to enhance your development skills. It's
-              open-sourced to provide a practical tool and valuable knowledge to
-              developers at any stage.`,
+        title: "Create a personal library of GitHub repositories",
+        text: `Built with React Native, React Native Paper and GraphQL, this app allows user to search GitHub repositories, rate them, and store for later use. It includes log in and authentication, as well as advanced sorting features.`,
       },
       b: {
-        title: "Easy Integration with Your DB of Choice",
-        text: `Effortlessly integrate with your preferred database, including
-              SQLite for local use. Utilizing Prisma and tRPC, this app offers a
-              flexible and scalable backend setup, making it easy to adapt and
-              manage your data needs as you develop and expand your project.`,
+        title: "Built with the latest mobile technologies",
+        text: `Developed with Expo Go and xCode. Works with both iOS and Android.`,
       },
     },
   },
   {
-    title: "nextMotion",
+    title: "BlogApp",
     projectUrls: {
       site: {
-        url: "https://next-motion-five.vercel.app/",
+        url: "https://blog-app-rjha.onrender.com",
         icon: <RiExternalLinkLine size={20} />,
       },
       repo: {
-        name: "nextMotion",
-        owner: "yoyocharlie",
-        showStarCount: true,
+        name: "blog-app",
+        owner: "kpcullen",
+        showStarCount: false,
       },
     },
-    imageUrl: "/images/nextMotion.png",
-    description: `An open-source, opinionated portfolio template for creating a modern, reactive SPA portfolio.`,
+    imageUrl: "/images/blog-app.png",
+    description: `An app for friends to aggregate, share, rate and comment on blogs. Include sign up and login authentication.`,
     tech: [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "Aceternity UI",
-      "Framer Motion",
+      "JavaScript",
+      "React",
+      "React Query",
+      "React Bootstrap",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
     ],
     cards: {
       a: {
-        title: "Modern Reactive UI",
-        text: `This portfolio template offers a clean, modern, and fully responsive design. Built to be sleek and dynamic, it leverages the latest front-end technologies to ensure a smooth and engaging user experience, perfect for showcasing your projects and skills.`,
+        title: "Implements global state management",
+        text: `This app implements React Query to handle global UI, user and database state mangement. Error handling (as well as success messaging) is gracefully acheived by displaying a warning notification in the UI. JWT and bcrypt are implemented to handle authentication.`,
       },
       b: {
-        title: "Easy Customization & Integration",
-        text: `Seamlessly customize the portfolio to fit your unique style and preferences. With support for easy integration into various data sources, this opinionated template is designed to simplify the process of building a single-page application (SPA) portfolio that truly reflects your work.`,
+        title: "Node.js backend works with MongoDB",
+        text: `Backend built in Node.js with Express and Mongoose validators and schmemas. Data is persisted to MongoDB. Currently building another backend that works with PostgreSQL databases`,
       },
     },
   },
   {
-    title: "Simple Joys (WIP)",
+    title: "The Wild Oasis - Guest Website",
     projectUrls: {
       site: {
-        url: "https://simplejoysmedia.com",
+        url: "https://the-wild-oasis-website-lemon.vercel.app/",
         icon: <RiExternalLinkLine size={20} />,
       },
+      repo: {
+        name: "the-wild-oasis-website",
+        owner: "kpcullen",
+        showStarCount: false,
+      },
     },
-    videoUrl: "/images/simple-joys-video.mp4",
-    description: `A cinematography portfolio built with Next.js and Sanity.io for fast page speeds and quick delivery of high quality assets.`,
-    tech: [
-      "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "Framer Motion",
-      "tRPC",
-      "Sanity",
-    ],
+    imageUrl: "/images/the-wild-oasis-website.png",
+    description: `A booking and account management app for a fictional hotel`,
+    tech: ["Next.js", "TailwindCSS", "Google Authentication", "Supabase"],
     cards: {
       a: {
-        title: "Fast & Responsive Performance",
-        text: `Built with Next.js, this cinematography portfolio ensures lightning-fast page speeds and smooth navigation. High-quality video and image assets load efficiently, offering a seamless viewing experience without compromising on performance.`,
+        title: "React server components",
+        text: `Built with Next.js, this website acts as a model for a hotel booking app. Guests can peruse rooms based on size and availability, and making bookings accordingly. Server rendered components enhance SEO performance and searchability. Google Authentication is used to manager the guest's profile and bookings.`,
       },
       b: {
-        title: "Powered by Sanity.io",
-        text: `Leveraging Sanity.io, this portfolio delivers dynamic content and high-resolution assets with ease. Update your work in real-time and enjoy the flexibility of a powerful CMS, ensuring that your portfolio stays current and visually stunning.`,
+        title: "Deployed with Vercel, styled with TailwindCSS",
+        text: `The website serves as the guest portal for the management app below.`,
+      },
+    },
+  },
+  {
+    title: "The Wild Oasis - Hotel Management App",
+    projectUrls: {
+      site: {
+        url: "https://the-wild-oasis-kevin-cullen.netlify.app/",
+        icon: <RiExternalLinkLine size={20} />,
+      },
+      repo: {
+        name: "the-wild-oasis",
+        owner: "kpcullen",
+        showStarCount: false,
+      },
+    },
+    imageUrl: "/images/the-wild-oasis-management.png",
+    description: `A user-friendly hotel management app with a fully functional dashboard`,
+    tech: ["React", "React Query", "Styled Components", "Supabase"],
+    cards: {
+      a: {
+        title:
+          "A sleek, modern hotel management system with a user-friendly experience",
+        text: `The management side of the previous app. Allows hotel workers to manage books, rooms, customers and special requests with ease. Style with CSS-in-JS (Styled Components) while global state is managed with React Query. Log in with email: "test@test.com and password: "testtest".`,
+      },
+      b: {
+        title: "Utilising the latest graph-building technologies",
+        text: `A fully customised dashboard allows the user to measure performance, statistics, trends, and upcoming events.`,
+      },
+    },
+  },
+  {
+    title: "Patientor - Patient Management Prototype",
+    projectUrls: {
+      site: {
+        url: "https://patientor-kur7.onrender.com/",
+        icon: <RiExternalLinkLine size={20} />,
+      },
+      repo: {
+        name: "patientor",
+        owner: "kpcullen",
+        showStarCount: false,
+      },
+    },
+    imageUrl: "/images/patientor.png",
+    description: `A TypeScript based management system for patients, hospital visits and diagnoses`,
+    tech: ["TypeScript", "React", "MUI"],
+    cards: {
+      a: {
+        title: "Enhanced type enforcement",
+        text: `Deploys TypeScript to control types for entering information and displaying information. Type enforcement also allows for the safe transmission of data, preventing sensitive information from being received.`,
+      },
+      b: {
+        title: "Type checking controls the UI",
+        text: `The UI is rendered in accordance with the pre-defined type that is being worked with.`,
       },
     },
   },
